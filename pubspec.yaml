@@ -1,6 +1,6 @@
 name: foldable_list_ml
 description: A foldable list package that provides maximum display configuration.
-version: 0.0.1
+version: 0.1.0
 homepage: https://github.com/Morlinnn/foldable_list_ml
 
 environment:
