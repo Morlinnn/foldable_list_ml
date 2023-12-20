@@ -20,8 +20,8 @@ dependencies:
 
 - Add common widget to display (first button)
 
-But it's valid and is not recommended because you cannot remove it normally.
-If valid widgets are added to contents, use `tileManager.removeValidWidgets();` to remove.
+But it's invalid and is not recommended because you cannot remove it normally.
+If invalid widgets are added to contents, use `tileManager.removeInvalidWidgets();` to remove.
 
 ![Example 1](example1.gif)
 
@@ -213,6 +213,7 @@ Welcome everyone to provide new suggestions and contributions to this package.
 ## Versioning
 
 - **V0.1.0** - Initial Release.
+- **V0.1.1** - Fix Incorrect Method Name.
 
 ## Authors
 
