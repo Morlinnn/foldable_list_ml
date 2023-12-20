@@ -53,9 +53,9 @@ class TileManager {
     }
   }
 
-  /// Remove all valid widgets that are not [BoundFoldableList] or [BoundTileItem]
-  void removeValidWidgets() {
-    _rootContents.removeValidWidgets(rebuildState);
+  /// Remove all inValid widgets that are not [BoundFoldableList] or [BoundTileItem]
+  void removeInvalidWidgets() {
+    _rootContents.removeInvalidWidgets(rebuildState);
   }
 
   /// Clear all [_rootContents]
@@ -165,8 +165,8 @@ class RootContents {
     return false;
   }
 
-  /// Remove all valid widgets that are not [BoundFoldableList] or [BoundTileItem]
-  void removeValidWidgets(RebuildState rebuildState) {
+  /// Remove all invalid widgets that are not [BoundFoldableList] or [BoundTileItem]
+  void removeInvalidWidgets(RebuildState rebuildState) {
     for (int i = 0; i < contents.length; i++) {
       Widget item = contents[i];
       if (item is! BoundFoldableList && item is! BoundTileItem) {

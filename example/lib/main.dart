@@ -81,10 +81,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 enableFeedback: false,
                 icon: const Icon(Icons.cleaning_services)
             ),
-            // Remove all valid widgets
+            // Remove all invalid widgets
             IconButton(
                 onPressed: () {
-                  tileManager.removeValidWidgets();
+                  tileManager.removeInvalidWidgets();
                 },
                 enableFeedback: false,
                 icon: const Icon(
